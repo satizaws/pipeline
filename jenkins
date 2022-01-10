@@ -12,12 +12,6 @@ pipeline{
             }
         }
 
-        stage ("deploy"){
-            steps{
-            echo "deploy the script"
-            }
-        }
-
         stage ("post-build"){
             steps{ 
             echo "post-build the script"
