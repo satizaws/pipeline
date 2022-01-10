@@ -1,0 +1,33 @@
+pipeline{
+    agent any
+    stages{
+        stage ("build") {
+            steps{
+                echo "build the script"
+            }
+        }
+        stage ("test") {
+            steps{
+            echo "test the script"
+            }
+        }
+
+        stage ("deploy"){
+            steps{
+            echo "deploy the script"
+            }
+        }
+
+        stage ("release"){
+            steps{
+            echo "release the script"
+            }
+        }
+
+        stage ("post-build"){
+            steps{ 
+            echo "post-build the script"
+            }
+        }
+   }
+}
