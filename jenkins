@@ -18,11 +18,6 @@ pipeline{
             }
         }
 
-        stage ("release"){
-            steps{
-            echo "release the script"
-            }
-        }
 
         stage ("post-build"){
             steps{ 
